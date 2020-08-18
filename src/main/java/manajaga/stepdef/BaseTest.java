@@ -170,7 +170,7 @@ public class BaseTest {
 				boolean pageLoaded = false;
 				while (!pageLoaded) {
 					try {
-						driver.findElement(By.xpath(".//div[contains(text(),'Processing...')]"));
+						
 					} catch (Exception e) {
 						pageLoaded = true;
 					}

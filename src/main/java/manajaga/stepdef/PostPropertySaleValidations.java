@@ -6,7 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class PostPropertyValidations {
+public class PostPropertySaleValidations {
 	
 	@Given("^User Navigate to post Free Window$")
 	public void user_Navigate_to_post_Free_Window() throws Throwable {

@@ -8,10 +8,16 @@ import manajaga.stepdef.BaseTest;
 
 public class CommonMethods {
 	
-	public void  SelectDD(String ID, String Value) throws Throwable {
-		WebElement propertytype_DD =BaseTest.driver.findElement(By.id(ID));
+	public static void SelectDD(String name, String Value) throws Throwable {
+		WebElement propertytype_DD =BaseTest.driver.findElement(By.xpath("(//*[@name='"+name+"'])[2]"));
 		new Select(propertytype_DD).selectByVisibleText(Value);
 		Thread.sleep(1000);
+		}
+	
+	public static void FieldValidation(String FieldName) throws Throwable
+	{
+		WebElement Field=BaseTest.driver.findElement(By.id(FieldName));
+		Field.isDisplayed();
 	}
 
 }
