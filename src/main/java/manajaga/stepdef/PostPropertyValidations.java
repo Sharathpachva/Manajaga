@@ -62,6 +62,11 @@ public class PostPropertyValidations {
 	public void user_Select_Industrial_Land_Property_type() throws Throwable {
 	  
 	}
+	
+	@Then("^Industrial Land fields are displayed$")
+	public void Industrial_Land_fields_are_displayed() throws Throwable {
+		
+	}
 
 	@When("^User Select Individual House Property type$")
 	public void user_Select_Individual_House_Property_type() throws Throwable {
