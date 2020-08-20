@@ -137,6 +137,7 @@ public class manajaga_elements
 	public static By PP_Adress=By.id("post_address");
 	public static By nxt_btn_adress=By.xpath("(//button[@class='btn btn-theme-2 nextBtn'])[5]");
 	public static By submit_btn_contactinfo=By.xpath("(//button[@class='btn btn-theme-2 submitBtn'])[2]");
+	public static By Next_btn_ChooseOptn=By.xpath("//button[contains(text(),'Next')]");
 
 	public static By RP_buy_rdbtn=By.xpath("//label[@for='ReqBuy']");
 	public static By RP_rent_rdbtn=By.xpath("//label[@for='ReqRent']");

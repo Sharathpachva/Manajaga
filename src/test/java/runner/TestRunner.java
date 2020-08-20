@@ -5,10 +5,10 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class) 
-@CucumberOptions(//dryRun = true,
+@CucumberOptions(dryRun = true,
 		            features="features",
                     glue="manajaga.stepdef",
-                    tags = {"@chrome"}, 
+                    tags = {"@chrome","@Rent"}, 
                     monochrome = true,
                   //  strict = true,
                     plugin = {"html:target/cucumber-html-report", 
