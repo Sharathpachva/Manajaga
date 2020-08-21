@@ -8,14 +8,13 @@ import manajaga.stepdef.BaseTest;
 
 public class CommonMethods {
 	
-	public static void SelectDD(String ID, String Value) throws Throwable {
+	public static void  SelectDD(String ID, String Value) throws Throwable {
 		WebElement propertytype_DD =BaseTest.driver.findElement(By.id(ID));
 		new Select(propertytype_DD).selectByVisibleText(Value);
 		BaseTest.waitUntilPageLoad();
 		}
-	
-	public static void FieldValidation(String FieldName) throws Throwable
-	{
+
+	public static void FieldValidation(String FieldName) throws Throwable{
 		WebElement Field=BaseTest.driver.findElement(By.id(FieldName));
 		Field.isDisplayed();
 	}
@@ -27,5 +26,4 @@ public class CommonMethods {
 		BaseTest.driver.findElement(By.xpath("//input[@name='state']")).sendKeys(State);
 		BaseTest.driver.findElement(By.xpath("//input[@name='country']")).sendKeys(Country);
 	}
-	
 }

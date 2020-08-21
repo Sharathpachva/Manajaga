@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(dryRun = true,
 		            features="features",
                     glue="manajaga.stepdef",
-                    tags = {"@chrome","@PPPG"}, 
+                    tags = {"@chrome"}, 
                     monochrome = true,
                     strict = true,
                     plugin = {"html:target/cucumber-html-report", 

@@ -158,17 +158,16 @@ public class BaseTest {
 			} catch (IOException ex) {
 			}
 		}
-		 //driver.quit();
 
+		 driver.quit();
 	}
 
 	public static void waitUntilPageLoad() throws Throwable {
-			JavascriptExecutor js = (JavascriptExecutor)driver;
+	 		JavascriptExecutor js = (JavascriptExecutor)driver;
 			if(js.executeScript("return document.readyState").toString().equals("complete")) {
 				return;
+				}
 			}
-		}
-	
 
 	private String loadFirefoxDriver() {
 		String firefoxDriver = null;

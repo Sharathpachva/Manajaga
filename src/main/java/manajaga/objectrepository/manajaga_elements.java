@@ -142,7 +142,8 @@ public class manajaga_elements
 	public static By PP_Adress=By.id("post_address");
 	public static By nxt_btn_adress=By.xpath("(//button[@class='btn btn-theme-2 nextBtn'])[5]");
 	public static By submit_btn_contactinfo=By.xpath("(//button[@class='btn btn-theme-2 submitBtn'])[2]");
-
+	public static By Next_btn_ChooseOptn=By.xpath("//button[contains(text(),'Next')]");
+//Required Property elements
 	public static By RP_buy_rdbtn=By.xpath("//label[@for='ReqBuy']");
 	public static By RP_rent_rdbtn=By.xpath("//label[@for='ReqRent']");
 	public static By RP_PG_rdbtn=By.xpath("//label[@for='ReqPG']");
@@ -158,7 +159,6 @@ public class manajaga_elements
 	public static By RP_WaterFacilityYes=By.id("rWaterFacilityYes");
 	public static By RP_WaterFacilityNo=By.id("rWaterFacilityNo");
 	public static By RP_WaterFacilityNotMandatory=By.id("WFNotMandatory");
-	
 	public static By RP_ExpTotalPrice=By.id("Req-ExpectingTotalPrice");
 	public static By RP_OnlyOwners_chkbx=By.xpath("//label[@for='rOnlyOwners']");
 	public static By RP_OnlyBuilders_chkbx=By.xpath("//label[@for='rOnlybuilders']");
