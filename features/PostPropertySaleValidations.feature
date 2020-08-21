@@ -39,7 +39,7 @@ Then Industrial Land fields are displayed
 Scenario: Individual House fields Validation
 Given User Navigate to post Free Window
 When User select Post Property and select Sale
-And User Select Individual House Property type
+And User Select Individual House Property type 
 Then Individual House fields are displayed
 
 @chrome

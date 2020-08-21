@@ -10,20 +10,19 @@ import manajaga.pages.CommonMethods;
 public class RequirePropertyBuyRentValidation {
 
 	@When("^User select Require Property and select Buy$")
-	public void user_select_Require_Property_and_select_Buy() throws Throwable 
-	{
+	public void user_select_Require_Property_and_select_Buy() throws Throwable {
 		BaseTest.driver.findElement(By.xpath("//label[@for='RequiredProperty']")).click();
-		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[1]")).click();
+		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[1]"))
+				.click();
 		BaseTest.driver.findElement(By.xpath("//label[@for='n_pp_buyer']")).click();
 		BaseTest.driver.findElement(By.xpath("//label[@for='ReqBuy']")).click();
-		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[2]")).click();
-		
+		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[2]"))
+				.click();
+
 	}
 
 	@Then("^Agricultural Land fields for buy or rent are displayed$")
-	public void agricultural_Land_fields_for_buy_or_rent_are_displayed() throws Throwable 
-	{
-		CommonMethods.SelectDD("requirePropertyType", "Agriculture Land");
+	public void agricultural_Land_fields_for_buy_or_rent_are_displayed() throws Throwable {
 		CommonMethods.FieldValidation("req-areas-all");
 		CommonMethods.FieldValidation("require-area-value");
 		CommonMethods.FieldValidation("require-area-length");
@@ -35,13 +34,11 @@ public class RequirePropertyBuyRentValidation {
 		CommonMethods.FieldValidation("Req-ExpectingTotalPrice");
 		CommonMethods.FieldValidation("req-responsefrom");
 		Thread.sleep(1000);
-		
+
 	}
 
-	@Then("^Apartment fields for buy for Buy or rent are displayed$")
-	public void apartment_fields_for_buy_or_rent_for_Buy_are_displayed() throws Throwable 
-	{
-		CommonMethods.SelectDD("requirePropertyType", "Apartment");
+	@Then("^Apartment fields for buy or rent are displayed$")
+	public void apartment_fields_for_buy_or_rent_are_displayed() throws Throwable {
 		CommonMethods.FieldValidation("requireBedrooms");
 		CommonMethods.FieldValidation("requireBathrooms");
 		CommonMethods.FieldValidation("requireFurniture");
@@ -57,15 +54,12 @@ public class RequirePropertyBuyRentValidation {
 		CommonMethods.FieldValidation("req-otherroom");
 		CommonMethods.FieldValidation("Req-ExpectingTotalPrice");
 		CommonMethods.FieldValidation("req-responsefrom");
-		
-		
+
 	}
 
 	@Then("^Commercial Plot fields for buy or rent are displayed$")
-	public void commercial_Plot_fields_for_buy_or_rent_are_displayed() throws Throwable 
-	{
-		
-		CommonMethods.SelectDD("requirePropertyType", "Commercial Plot");
+	public void commercial_Plot_fields_for_buy_or_rent_are_displayed() throws Throwable {
+
 		CommonMethods.FieldValidation("req-areas-few");
 		CommonMethods.FieldValidation("req-area-value");
 		CommonMethods.FieldValidation("req-area-length");
@@ -78,13 +72,11 @@ public class RequirePropertyBuyRentValidation {
 		CommonMethods.FieldValidation("req-permission");
 		CommonMethods.FieldValidation("req-expprice");
 		CommonMethods.FieldValidation("req-responsefrom");
-		
+
 	}
 
 	@Then("^Commercial Shop fields for buy or rent are displayed$")
-	public void commercial_Shop_fields_for_buy_or_rent_are_displayed() throws Throwable 
-	{
-		CommonMethods.SelectDD("requirePropertyType", "Commercial Shop");
+	public void commercial_Shop_fields_for_buy_or_rent_are_displayed() throws Throwable {
 		CommonMethods.FieldValidation("req-areas-few");
 		CommonMethods.FieldValidation("req-area-value");
 		CommonMethods.FieldValidation("req-area-length");
@@ -98,9 +90,7 @@ public class RequirePropertyBuyRentValidation {
 	}
 
 	@Then("^Pent House fields for buy or rent are displayed$")
-	public void pent_House_fields_for_buy_or_rent_are_displayed() throws Throwable 
-	{
-		CommonMethods.SelectDD("requirePropertyType", "PentHouse");
+	public void pent_House_fields_for_buy_or_rent_are_displayed() throws Throwable {
 		CommonMethods.FieldValidation("req-bedrooms");
 		CommonMethods.FieldValidation("req-bathrooms");
 		CommonMethods.FieldValidation("req-furniture");
@@ -120,25 +110,22 @@ public class RequirePropertyBuyRentValidation {
 		CommonMethods.FieldValidation("req-possession");
 		CommonMethods.FieldValidation("req-expprice");
 		CommonMethods.FieldValidation("req-responsefrom");
-		
+
 	}
 
 	@When("^User Select residential House Property type$")
-	public void user_Select_residential_House_Property_type() throws Throwable 
-	{
+	public void user_Select_residential_House_Property_type() throws Throwable {
 		BaseTest.driver.findElement(By.xpath("//label[@for='RequiredProperty']")).click();
-		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[1]")).click();
+		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[1]"))
+				.click();
 		BaseTest.driver.findElement(By.xpath("//label[@for='n_pp_buyer']")).click();
 		BaseTest.driver.findElement(By.xpath("//label[@for='ReqBuy']")).click();
-		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[2]")).click();
-		
+		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[2]"))
+				.click();
 	}
 
 	@Then("^Residential House fields for buy or rent are displayed$")
-	public void residential_House_fields_for_buy_or_rent_are_displayed() throws Throwable 
-	{
-		CommonMethods.SelectDD("requirePropertyType", "Residential House");
-		
+	public void residential_House_fields_for_buy_or_rent_are_displayed() throws Throwable {
 		CommonMethods.FieldValidation("req-bedrooms");
 		CommonMethods.FieldValidation("req-bathrooms");
 		CommonMethods.FieldValidation("req-floorno");
@@ -163,10 +150,7 @@ public class RequirePropertyBuyRentValidation {
 	}
 
 	@Then("^Residential Plot fields for buy or rent are displayed$")
-	public void residential_Plot_fields_for_buy_or_rent_are_displayed() throws Throwable 
-	{
-		CommonMethods.SelectDD("requirePropertyType", "Residential Plot");
-		
+	public void residential_Plot_fields_for_buy_or_rent_are_displayed() throws Throwable {
 		CommonMethods.FieldValidation("req-areas-few");
 		CommonMethods.FieldValidation("req-area-value");
 		CommonMethods.FieldValidation("req-area-length");
@@ -182,13 +166,8 @@ public class RequirePropertyBuyRentValidation {
 		CommonMethods.FieldValidation("req-responsefrom");
 	}
 
-	
-
 	@Then("^WareHouse fields for buy or rent are displayed$")
-	public void warehouse_fields_for_buy_or_rent_are_displayed() throws Throwable 
-	{
-		CommonMethods.SelectDD("requirePropertyType", "Warehouse");
-		
+	public void warehouse_fields_for_buy_or_rent_are_displayed() throws Throwable {
 		CommonMethods.FieldValidation("req-bathrooms");
 		CommonMethods.FieldValidation("req-totalfloors");
 		CommonMethods.FieldValidation("req-furniture");
@@ -206,15 +185,95 @@ public class RequirePropertyBuyRentValidation {
 	}
 
 	@When("^User select Require Property and select Rent$")
-	public void user_select_Require_Property_and_select_Rent() throws Throwable 
-	{
-		
+	public void user_select_Require_Property_and_select_Rent() throws Throwable {
+
 		BaseTest.driver.findElement(By.xpath("//label[@for='RequiredProperty']")).click();
 		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[1]")).click();
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//label[@for='n_pp_tenant']")).click();
 		BaseTest.driver.findElement(By.xpath("//label[@for='ReqRent']")).click();
 		BaseTest.driver.findElement(By.xpath("(//button[@class='btn btn-theme-2 nextBtn'][contains(.,'Next')])[2]")).click();
-		
+		BaseTest.waitUntilPageLoad();
 	}
 
+	@When("^User Select Agricultural Land Property type for Require Property Buy$")
+	public void User_Select_Agricultural_Land_Property_type_for_Require_Property_Buy() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Agriculture Land");
+	}
+
+	@When("^User Select Commercial Plot Property type for Require Property Buy$")
+	public void User_Select_Commercial_Plot_Property_type_for_Require_Property_Buy() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Commercial Plot");
+	}
+
+	@When("^User Select Commercial Shop Property type for Require Property Buy$")
+	public void User_Select_Commercial_Shop_Property_type_for_Require_Property_Buy() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Commercial Shop");
+	}
+
+	@When("^User Select PentHouse Property type for Require Property Buy$")
+	public void User_Select_PentHouse_Property_type_for_Require_Property_Buy() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "PentHouse");
+	}
+
+	@When("^User Select Residential House Property type for Require Property Buy$")
+	public void User_Select_Residential_House_Property_type_for_Require_Property_Buy() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Residential House");
+	}
+
+	@When("^User Select Residential Plot Property type for Require Property Buy$")
+	public void User_Select_Residential_Plot_Property_type_for_Require_Property_Buy() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Residential Plot");
+	}
+
+	@When("^User Select WareHouse Property type for Require Property Buy$")
+	public void User_Select_WareHouse_Property_type_for_Require_Property_Buy() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Warehouse");
+	}
+
+	@When("^User Select Apartment Property type for Require Property Buy$")
+	public void User_Select_Apartment_Property_type_for_Require_Property_Buy() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Apartment");
+	}
+	
+	@When("^User Select Agricultural Land Property type for Require Property Rent$")
+	public void User_Select_Agricultural_Land_Property_type_for_Require_Property_Rent() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Agriculture Land");
+	}
+
+	@When("^User Select Commercial Plot Property type for Require Property Rent$")
+	public void User_Select_Commercial_Plot_Property_type_for_Require_Property_Rent() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Commercial Plot");
+	}
+
+	@When("^User Select Commercial Shop Property type for Require Property Rent$")
+	public void User_Select_Commercial_Shop_Property_type_for_Require_Property_Rent() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Commercial Shop");
+	}
+
+	@When("^User Select PentHouse Property type for Require Property Rent$")
+	public void User_Select_PentHouse_Property_type_for_Require_Property_Rent() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "PentHouse");
+	}
+
+	@When("^User Select Residential House Property type for Require Property Rent$")
+	public void User_Select_Residential_House_Property_type_for_Require_Property_Rent() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Residential House");
+	}
+
+	@When("^User Select Residential Plot Property type for Require Property Rent$")
+	public void User_Select_Residential_Plot_Property_type_for_Require_Property_Rent() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Residential Plot");
+	}
+
+	@When("^User Select WareHouse Property type for Require Property Rent$")
+	public void User_Select_WareHouse_Property_type_for_Require_Property_Rent() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Warehouse");
+	}
+
+	@When("^User Select Apartment Property type for Require Property Rent$")
+	public void User_Select_Apartment_Property_type_for_Require_Property_Rent() throws Throwable {
+		CommonMethods.SelectDD("requirePropertyTypeBuyRent", "Apartment");
+		
+	}
 }

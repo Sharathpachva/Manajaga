@@ -70,6 +70,7 @@ public class BaseTest {
 		} else if (osName.contains("Windows")) {
 			driver.manage().window().maximize();
 		}
+		options.addArguments("--disable-notifications");
 		options.addArguments("--disable-gpu");
 		options.addArguments("--disable-extensions");
 		options.setExperimentalOption("useAutomationExtension", false);
@@ -157,28 +158,17 @@ public class BaseTest {
 			} catch (IOException ex) {
 			}
 		}
-		// driver.quit();
+		 //driver.quit();
 
 	}
 
 	public static void waitUntilPageLoad() throws Throwable {
-		for (int i = 0; i < 50; i++) {
-			Thread.sleep(2000);
-			Boolean isPageLoaded = (Boolean) ((JavascriptExecutor) driver).executeScript("return document.readyState")
-					.equals("complete");
-			if (isPageLoaded) {
-				boolean pageLoaded = false;
-				while (!pageLoaded) {
-					try {
-						
-					} catch (Exception e) {
-						pageLoaded = true;
-					}
-				}
-				break;
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			if(js.executeScript("return document.readyState").toString().equals("complete")) {
+				return;
 			}
 		}
-	}
+	
 
 	private String loadFirefoxDriver() {
 		String firefoxDriver = null;
