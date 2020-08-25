@@ -30,6 +30,7 @@ public class manajaga_elements
 	public static By PP_floorNoDD=By.id("floorNo");
 	public static By PP_areaDD=By.id("post-areas-few");
 	public static By PP_totalarea=By.id("post-areavalue");
+	public static By PP_areaAllDD=By.id("post-areas-all");
 	public static By PP_length=By.id("area-length");
 	public static By PP_breadth=By.id("area-bredth");
 	public static By PP_furnitureDD=By.id("furniture");
@@ -45,7 +46,7 @@ public class manajaga_elements
 	public static By PP_CommonBathRoomYes=By.xpath("//label[@for='CommonBathRoomYes']");
 	public static By PP_CommonBathRoomNo=By.id("//label[@for='CommonBathRoomNo']");
 	public static By PP_PoojaRoomYes=By.xpath("//label[@for='PoojaRoomYes']");
-	public static By PP_PoojaRoomNo=By.id("//label[@for='PoojaRoomNo']");
+	public static By PP_PoojaRoomNo=By.xpath("//label[@for='PoojaRoomNo']");
 	public static By PP_OtherRoomYes=By.xpath("//label[@for='OtherRoomYes']");
 	public static By PP_OtherRoomNo=By.xpath("//label[@for='OtherRoomNo']");
 	public static By PP_RoomName=By.id("otherRoomName");
@@ -54,7 +55,7 @@ public class manajaga_elements
 	public static By PP_PossessionUnderConstruction=By.xpath("//label[@for='UnderConstruction']");
 	public static By PP_Possessionreadytomove=By.xpath("//label[@for='ReadyToMove']");
 	public static By PP_PropertyPermissionyes=By.xpath("//label[@for='PermissionYes']");
-	public static By PP_PropertyPropertyno=By.xpath("//label[@for='PermissionNo']");
+	public static By PP_PropertyPermissionNo=By.xpath("//label[@for='PermissionNo']");
 	public static By PP_GatedCommYes=By.xpath("//label[@for='GatedCommYes']");
 	public static By PP_GatedCommNo=By.xpath("//label[@for='GatedCommNo']");
 	public static By PP_VentureYes=By.xpath("//label[@for='VentureYes']");

@@ -21,15 +21,22 @@ public class PostPropertyOwnerSaleFunctionality {
 	@Given("^User SignIn and Navigate to Post Free Window$")
 	public void User_SignIn_and_Navigate_to_Post_Free_Window() throws Throwable
 	{
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//a[@href='#'][contains(.,'Sign In')]")).click();
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//input[contains(@name,'username')]")).sendKeys("shiva.dba84@gmail.com");
-		Thread.sleep(1000);
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//input[contains(@id,'password-field')]")).sendKeys("123456");
-		Thread.sleep(1000);
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//button[contains(.,'Login')]")).click();	
+		BaseTest.waitUntilPageLoad();
 		WebElement MyAccount=BaseTest.driver.findElement(By.xpath("//a[@title='My Account']"));
 		MyAccount.isDisplayed();
+		Thread.sleep(3000);
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.id("blink_me")).click();
+		Thread.sleep(2000);
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//label[@for='PostProperty']")).click();
 		
 	}
@@ -54,8 +61,8 @@ public class PostPropertyOwnerSaleFunctionality {
 
 
 
-	@When("^Enter All the Mandatory fields for ([^\"]*) Property type$")
-	public void enter_All_the_Mandatory_fields_for_Property_type(String Propertytype) throws Throwable {
+	@When("^Enter All the Mandatory fields for ([^\"]*) Property type of post property for Sale$")
+	public void enter_All_the_Mandatory_fields_for_Property_type_of_post_property_for_Sale(String Propertytype) throws Throwable {
 		if (Propertytype.contains("Agriculture Land")) 
 		{
 			CommonMethods.SelectDD("facing", "South");
