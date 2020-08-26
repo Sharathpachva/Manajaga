@@ -10,7 +10,7 @@ Then Post Property is created
 
 Examples:
 |Propertytype|
-#|Agriculture Land|
+|Agriculture Land|
 #|Apartment|
 #|Commercial Plot|
 #|Commercial Shop|
@@ -20,3 +20,4 @@ Examples:
 #|Pent House|
 #|Residential Plot|
 #|Ware House|
+

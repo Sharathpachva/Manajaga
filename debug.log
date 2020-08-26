@@ -2,3 +2,32 @@
 [0820/001058.870:ERROR:process_info.cc(556)] ReadMemoryInfo failed
 [0820/001058.870:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
 [0820/001058.870:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0822/110024.508:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0822/110024.523:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0822/110024.523:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0822/110024.523:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0822/110024.523:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0822/110024.523:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0822/110024.523:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0822/110024.523:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0822/110024.523:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0822/110024.541:ERROR:exception_snapshot_win.cc(98)] thread ID 20324 not found in process
+[0825/121934.351:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0825/121936.638:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0825/121936.638:ERROR:process_reader_win.cc(123)] NtOpenThread: An invalid Client ID was specified. (0xc000000b)
+[0825/121936.641:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0825/121936.641:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0825/121936.641:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0825/121936.641:ERROR:exception_snapshot_win.cc(98)] thread ID 32904 not found in process
+[0825/123345.544:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0825/123717.232:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0825/150659.900:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0825/151843.391:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0825/153238.779:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0825/155451.931:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0825/155700.399:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0825/165956.670:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0826/153622.500:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0826/153950.072:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0826/155734.411:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0826/160206.955:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports

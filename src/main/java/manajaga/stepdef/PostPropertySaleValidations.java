@@ -12,7 +12,9 @@ public class PostPropertySaleValidations {
 
 	@Given("^User Navigate to post Free Window$")
 	public void user_Navigate_to_post_Free_Window() throws Throwable {
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.id("blink_me")).click();
+		Thread.sleep(1000);
 		BaseTest.waitUntilPageLoad();
 	}
 

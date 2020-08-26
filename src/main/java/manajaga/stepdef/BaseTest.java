@@ -80,6 +80,7 @@ public class BaseTest {
 		driver = new ChromeDriver(options);
 		driver.get(Configurations.getConfigData("URL"));
 		BaseTest.waitUntilPageLoad();
+		Thread.sleep(2000);
 	}
 	
 	@Before("@chromeincognito")
@@ -159,15 +160,37 @@ public class BaseTest {
 			}
 		}
 
-		 driver.quit();
+	//	 driver.quit();
 	}
 
 	public static void waitUntilPageLoad() throws Throwable {
+		Thread.sleep(1000);
 	 		JavascriptExecutor js = (JavascriptExecutor)driver;
 			if(js.executeScript("return document.readyState").toString().equals("complete")) {
 				return;
 				}
 			}
+	
+//	public static void waitUntilPageLoad() throws Throwable {
+//
+//		for (int i = 0; i < 50; i++) {
+//			Thread.sleep(2000);
+//			Boolean isPageLoaded = (Boolean) ((JavascriptExecutor) driver).executeScript("return document.readyState")
+//					.equals("complete");
+//			if (isPageLoaded) {
+//				boolean pageLoaded = false;
+//				while (!pageLoaded) {
+//					try {
+//						driver.findElement(By.xpath("//div[@class = 'preloader1']"));
+//						driver.findElement(By.xpath("//div[@class = 'preloader']"));
+//					} catch (Exception e) {
+//						pageLoaded = true;
+//					}
+//				}
+//				break;
+//			}
+//		}
+//	}
 
 	private String loadFirefoxDriver() {
 		String firefoxDriver = null;
