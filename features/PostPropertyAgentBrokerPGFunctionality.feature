@@ -1,9 +1,9 @@
-Feature: Functionality of Post Property of Owner for PG 
+Feature: Functionality of Post Property of AgentBroker for PG 
 
-@chrome @PPORF
-Scenario Outline: Verifying the functionality of Post Property of Owner for PG 
+@chrome 
+Scenario Outline: Verifying the functionality of Post Property of AgentBroker for PG 
 Given User SignIn and Navigate to Post Free Window
-When User select Post Property and Select Owner for PG 
+When User select Post Property and Select AgentBroker for PG 
 And User select <Propertytype> Property type of post property for PG
 And Enter All the Mandatory fields for <Propertytype> Property type of Post Property PG
 Then Post Property is created

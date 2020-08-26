@@ -1,16 +1,16 @@
-Feature: Functionality of Post Property of Owner for Rent 
+Feature: Functionality of Post Property of Builder for Rent 
 
-@chrome @PPORF
-Scenario Outline: Verifying the functionality of Post Property of Owner for Rent 
+@chrome 
+Scenario Outline: Verifying the functionality of Post Property of Builder for Rent 
 Given User SignIn and Navigate to Post Free Window
-When User select Post Property and Select Owner for Rent 
+When User select Post Property and Select Builder for Rent 
 And User select <Propertytype> Property type of post property for Rent
 And Enter All the Mandatory fields for <Propertytype> Property type of Post Property Rent
 Then Post Property is created
 
 Examples:
 |Propertytype|
-|Apartment|
+#|Apartment|
 #|Commercial Plot|
 #|Commercial Shop|
 #|Farm House|
@@ -20,4 +20,3 @@ Examples:
 #|Pent House|
 #|Residential Plot|
 #|Ware House|
-

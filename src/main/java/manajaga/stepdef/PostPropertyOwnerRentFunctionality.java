@@ -10,8 +10,7 @@ public class PostPropertyOwnerRentFunctionality
 {
 
 	@When("^User select Post Property and Select Owner for Rent$")
-	public void user_select_Post_Property_and_Select_Owner_for_Rent() throws Throwable 
-	{
+	public void user_select_Post_Property_and_Select_Owner_for_Rent() throws Throwable {
 		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
 		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
 		BaseTest.driver.findElement(manajaga_elements.PP_Owner_rdbtn).click();
@@ -143,13 +142,13 @@ public class PostPropertyOwnerRentFunctionality
 			BaseTest.driver.findElement(manajaga_elements.videoURL).sendKeys("https://www.youtube.com/watch?v=Mw8E4QsdkJI");
 			BaseTest.driver.findElement(manajaga_elements.PP_description).sendKeys("Entered all the fields of Commercial Shop of Owner Sale");
 			BaseTest.driver.findElement(manajaga_elements.nxtbtn_propertyinfo).click();
-//			Thread.sleep(60000);
-//			BaseTest.waitUntilPageLoad();
+			Thread.sleep(60000);
+			BaseTest.waitUntilPageLoad();
 		
 			
-//			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
-//			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
-//			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
+			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
+			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
+			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
 		}
 		
 		if (Propertytype.contains("Farm House")) 
@@ -193,9 +192,9 @@ public class PostPropertyOwnerRentFunctionality
 			BaseTest.waitUntilPageLoad();
 		
 			
-//			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
-//			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
-//			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
+			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
+			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
+			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
 		}
 		if (Propertytype.contains("Industrial Land")) 
 		{
@@ -225,9 +224,9 @@ public class PostPropertyOwnerRentFunctionality
 			BaseTest.waitUntilPageLoad();
 		
 			
-//			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
-//			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
-//			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
+			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
+			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
+			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
 		}
 		
 		if (Propertytype.contains("Individual House")) 
@@ -273,9 +272,9 @@ public class PostPropertyOwnerRentFunctionality
 			BaseTest.waitUntilPageLoad();
 		
 			
-//			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
-//			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
-//			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
+			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
+			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
+			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
 		}
 		
 		
@@ -312,9 +311,9 @@ public class PostPropertyOwnerRentFunctionality
 			BaseTest.waitUntilPageLoad();
 		
 			
-//			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
-//			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
-//			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
+			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
+			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
+			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
 		}
 		if (Propertytype.contains("Pent House")) 
 		{
@@ -366,9 +365,9 @@ public class PostPropertyOwnerRentFunctionality
 			BaseTest.waitUntilPageLoad();
 		
 			
-//			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
-//			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
-//			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
+			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
+			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
+			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
 		}
 		if (Propertytype.contains("Ware House")) 
 		{
@@ -403,15 +402,26 @@ public class PostPropertyOwnerRentFunctionality
 			BaseTest.waitUntilPageLoad();
 		
 			
-//			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
-//			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
-//			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
+			CommonMethods.LocationDetails("hyderbad", "Hyderabad", "Telangana", "India");
+			BaseTest.driver.findElement(manajaga_elements.nxt_btn_adress).click();
+			BaseTest.driver.findElement(manajaga_elements.submit_btn_contactinfo).click();
 		}
 		
 	}
-	
-	
-
-
-	
+	@When("^User select Post Property and Select Builder for Rent$")
+	public void user_select_Post_Property_and_Select_Builder_for_Rent() throws Throwable {
+		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Builder_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Rent_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_user_info).click();
+	}
+	@When("^User select Post Property and Select AgentBroker for Rent$")
+	public void user_select_Post_Property_and_Select_AgentBroker_for_Rent() throws Throwable {
+		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Agent_Broker_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Rent_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_user_info).click();
+	}
 }

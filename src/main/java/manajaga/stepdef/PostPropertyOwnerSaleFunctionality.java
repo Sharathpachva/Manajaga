@@ -44,14 +44,11 @@ public class PostPropertyOwnerSaleFunctionality {
 
 	@When("^User select Post Property and Select Owner for Sale$")
 	public void user_select_Post_Property_and_Select_Owner_for_Sale() throws Throwable {
-		
-		
 		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
 		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
 		BaseTest.driver.findElement(manajaga_elements.PP_Owner_rdbtn).click();
 		BaseTest.driver.findElement(manajaga_elements.PP_Sale_rdbtn).click();
 		BaseTest.driver.findElement(manajaga_elements.nxt_btn_user_info).click();
-
 	}
 
 	@When("^User select ([^\"]*) Property type of post property for sale$")
@@ -384,7 +381,7 @@ public class PostPropertyOwnerSaleFunctionality {
 	@Then("^Post Property is created$")
 	public void property_type_is_created() throws Throwable 
 	{
-		int alert=BaseTest.driver.findElements(By.xpath("//h4[contains(text(),'Alert Message')")).size();
+		int alert=BaseTest.driver.findElements(By.xpath("//h4[contains(text(),'Alert Message')]")).size();
 		if(alert!=1)
 		{
 			Assert.fail("alert is not displayed");
@@ -395,10 +392,24 @@ public class PostPropertyOwnerSaleFunctionality {
 		{
 			Assert.fail("Alert Msg is not same as Expected");
 		}
+		
 	
 	}
-	
-
-	
+	@When("^User select Post Property and Select Builder for Sale$")
+	public void user_select_Post_Property_and_Select_Builder_for_Sale() throws Throwable {
+		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Builder_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Sale_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_user_info).click();
+	}
+	@When("^User select Post Property and Select AgentBroker for Sale$")
+	public void user_select_Post_Property_and_Select_AgentBroker_for_Sale() throws Throwable {
+		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Agent_Broker_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Sale_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_user_info).click();
+	}
 
 }
