@@ -160,8 +160,8 @@ public class BaseTest {
 			}
 		}
 
-	//	 driver.quit();
-	}
+               driver.quit();
+}
 
 	public static void waitUntilPageLoad() throws Throwable {
 		Thread.sleep(1000);

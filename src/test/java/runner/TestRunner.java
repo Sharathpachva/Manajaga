@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class) 
 @CucumberOptions(//dryRun = true,
-		            features="features",
+		    features="features",
                     glue="manajaga.stepdef",
                     tags = {"@chrome","@Rent"}, 
                     monochrome = true,

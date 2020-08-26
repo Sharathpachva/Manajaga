@@ -138,7 +138,7 @@ public class PostPropertyRentValidations {
 		CommonMethods.FieldValidation("area-bredth");
 		CommonMethods.FieldValidation("post-opensides");
 		CommonMethods.FieldValidation("post-face");
-		CommonMethods.FieldValidation("leaseyears");
+		CommonMethods.FieldValidation("leaseYears");
 		CommonMethods.FieldValidation("post-permission");
 		CommonMethods.FieldValidation("post-venture");
 		CommonMethods.FieldValidation("post-water");
@@ -190,7 +190,7 @@ public class PostPropertyRentValidations {
 		CommonMethods.FieldValidation("availableStatus");
 		CommonMethods.FieldValidation("post-water");
 		CommonMethods.FieldValidation("post-Bathroom");
-		CommonMethods.FieldValidation("post-cafeteria");
+		CommonMethods.FieldValidation("post-Cafeteria");
 		CommonMethods.FieldValidation("post-watchmen");
 		CommonMethods.FieldValidation("post-cc-cameras");
 		CommonMethods.FieldValidation("post-responsefrom");

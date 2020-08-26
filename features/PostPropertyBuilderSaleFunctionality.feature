@@ -1,9 +1,9 @@
-Feature: Functionality of Post Property of Owner for Sale 
+Feature: Functionality of Post Property of Builder for Sale 
 
-@chrome @PPOSF
-Scenario Outline: Verifying the functionality of Post Property of Owner for Sale 
+@chrome 
+Scenario Outline: Verifying the functionality of Post Property of Builder for Sale 
 Given User SignIn and Navigate to Post Free Window
-When User select Post Property and Select Owner for Sale 
+When User select Post Property and Select Builder for Sale 
 And User select <Propertytype> Property type of post property for sale
 And Enter All the Mandatory fields for <Propertytype> Property type of post property for Sale
 Then Post Property is created
@@ -20,4 +20,3 @@ Examples:
 #|Pent House|
 #|Residential Plot|
 #|Ware House|
-

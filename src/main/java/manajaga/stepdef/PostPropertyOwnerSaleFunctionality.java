@@ -16,14 +16,16 @@ public class PostPropertyOwnerSaleFunctionality {
 	String PropertyID = null;
 	
 	@Given("^User SignIn and Navigate to Post Free Window$")
+
 	public void User_SignIn_and_Navigate_to_Post_Free_Window() throws Throwable {
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//a[@href='#'][contains(.,'Sign In')]")).click();
-		Thread.sleep(3000);
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//input[contains(@name,'username')]")).clear();
 		BaseTest.driver.findElement(By.xpath("//input[contains(@name,'username')]")).sendKeys("shiva.dba84@gmail.com");
-		Thread.sleep(1000);
+		BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//input[contains(@id,'password-field')]")).sendKeys("123456");
-		Thread.sleep(1000);
+        BaseTest.waitUntilPageLoad();
 		BaseTest.driver.findElement(By.xpath("//button[contains(.,'Login')]")).click();
 		BaseTest.waitUntilPageLoad();
 		Thread.sleep(2000);
@@ -38,13 +40,11 @@ public class PostPropertyOwnerSaleFunctionality {
 
 	@When("^User select Post Property and Select Owner for Sale$")
 	public void user_select_Post_Property_and_Select_Owner_for_Sale() throws Throwable {
-
 		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
 		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
 		BaseTest.driver.findElement(manajaga_elements.PP_Owner_rdbtn).click();
 		BaseTest.driver.findElement(manajaga_elements.PP_Sale_rdbtn).click();
 		BaseTest.driver.findElement(manajaga_elements.nxt_btn_user_info).click();
-
 	}
 
 	@When("^User select ([^\"]*) Property type of post property for sale$")
@@ -52,9 +52,9 @@ public class PostPropertyOwnerSaleFunctionality {
 		CommonMethods.SelectDD("propertyTypeSale", Propertytype);
 	}
 
-	@When("^Enter All the Mandatory fields for ([^\"]*) Property type$")
-	public void enter_All_the_Mandatory_fields_for_Property_type(String Propertytype) throws Throwable {
-		if (Propertytype.contains("Agriculture Land")) {
+	@When("^Enter All the Mandatory fields for ([^\"]*) Property type of post property for Sale$")
+	public void enter_All_the_Mandatory_fields_for_Property_type_of_post_property_for_Sale(String Propertytype) throws Throwable {
+		if (Propertytype.contains("Agriculture Land")){
 			CommonMethods.SelectDD("facing", "South");
 			CommonMethods.SelectDD("boundaryWith", "Fencing");
 			BaseTest.driver.findElement(manajaga_elements.PP_nowunderleaseyes).click();
@@ -400,20 +400,35 @@ public class PostPropertyOwnerSaleFunctionality {
 	public void property_type_is_created() throws Throwable {
 		int alert = BaseTest.driver.findElements(By.xpath("//h4[contains(text(),'Alert Message')]")).size();
 		if (alert != 1) {
-			Assert.fail("alert is not displayed");
+		Assert.fail("alert is not displayed");
 		}
 		String AlertMsg = BaseTest.driver.findElement(By.id("alertSuccessMessage")).getText();
 		String ExpectedMsg = "Property created successfully. The property will appear in search once the admin approves it. You can check the property in your Dashboard. Please Search with this Unique Id after the admin approved your property :";
 		if (!AlertMsg.contains(ExpectedMsg)) {
 			Assert.fail("Alert Msg is not same as Expected");
 		}
-		
 		if(AlertMsg.contains("property :")) {
 			String[] data = AlertMsg.split("property :");
 			PropertyID = data[1];
 			}
-		
 
+	
 	}
+	@When("^User select Post Property and Select Builder for Sale$")
+	public void user_select_Post_Property_and_Select_Builder_for_Sale() throws Throwable {
+		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Builder_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Sale_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_user_info).click();
+	}
+	@When("^User select Post Property and Select AgentBroker for Sale$")
+	public void user_select_Post_Property_and_Select_AgentBroker_for_Sale() throws Throwable {
+		BaseTest.driver.findElement(manajaga_elements.PostProperty_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_choose_option).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Agent_Broker_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.PP_Sale_rdbtn).click();
+		BaseTest.driver.findElement(manajaga_elements.nxt_btn_user_info).click();
+    }
 
 }

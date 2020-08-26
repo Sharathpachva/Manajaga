@@ -20,21 +20,21 @@ Given User Navigate to post Free Window
 When User select Post Property and select Rent
 And User Select Commercial Shop Property type for Post Property Rent
 Then Commercial Shop fields for Rent are displayed
-
+#
 #@chrome @Rent
 #Scenario: Farm House fields Validation
 #Given User Navigate to post Free Window
 #When User select Post Property and select Rent
 #And User Select FarmHouse Property type for Post Property Rent
 #Then Farm House fields for Rent are displayed
-#
+
 #@chrome @Rent
 #Scenario: Industrial Land fields Validation
 #Given User Navigate to post Free Window
 #When User select Post Property and select Rent
 #And User Select Industrial Land Property type for Post Property Rent
 #Then Industrial Land fields for Rent are displayed
-#
+
 #@chrome @Rent
 #Scenario: Individual House fields Validation
 #Given User Navigate to post Free Window
@@ -69,4 +69,4 @@ Then Commercial Shop fields for Rent are displayed
 #When User select Post Property and select Rent
 #And User Select WareHouse Property type for Post Property Rent
 #Then WareHouse fields for Rent are displayed
-#
+
